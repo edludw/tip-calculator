@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container-fluid vertical-center bg-dark p-4 pb-5">
+    <form>
+      <div class="container bg-dark text-white" id="content">
+        <div class="form-group">
+          <h1 class="text-center pt-1">Tip Calculator</h1>
+          <label class="" for="amount">Amount to pay</label>
+          <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input type="number" class="form-control" id="amount">
+          </div>
+          <div class="pt-2 pb-2">
+            <label for="people">Number of people sharing the bill</label>
+            <input type="number" class="form-control" id="people">
+            <div class="pb-4">
+            <label for="service" class="pt-2">How was the service?</label>
+            <select class="form-control" name="service" id="service">
+              <option value="selector" selected hidden>Select here</option>
+              <option value="excellent" id="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="regular">Regular</option>
+              <option value="bad">Bad</option>
+            </select>
+          </div>
+            <div class="btn btn-light btn-block" id="submit">Calculate</div>
+            <div id="tip"></div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
